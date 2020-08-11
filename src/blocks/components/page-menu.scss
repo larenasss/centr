@@ -1,0 +1,45 @@
+.page-menu {
+
+  @include tablets {
+    display: none;
+  }
+  
+  & ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    border: 1px solid #dddddd;
+    & a {
+      padding: 8px 20px;
+      display: block;
+    }
+
+    &:first-child {
+      border-radius: 6px 0 0 6px;
+    }
+  }
+
+  &__next {
+    width: 56px;
+    padding: 15px;
+    background-color: #f7f7f7;
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 0 6px 6px 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 9px;
+      display: block;
+      background: url("../../img/arrow-page-menu.png");
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

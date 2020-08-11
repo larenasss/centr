@@ -1,0 +1,259 @@
+.footer {
+  padding-left: 240px;
+
+  @include laptop {
+      padding-left: 0;
+  }
+
+  &__content {
+      background: #2b2b2b;
+      border-radius: 6px 0 0 6px;
+      color: $colorWhite;
+      padding: 55px 60px;
+
+      @include phone-max {
+          display: flex;
+          flex-direction: column-reverse;
+          padding: 40px;
+      }
+  }
+
+  &__top {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 35px;
+      margin-bottom: 35px;
+      border-bottom: 1px solid #cbcbcb;
+
+      @include net-book {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+
+      @include phone-max {
+          padding-bottom: 0;
+          margin-bottom: 0;
+          border-bottom: none;
+          justify-content: space-between;
+      }
+  }
+
+  &__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: .8;
+
+      @include desktop {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+
+      @include desktop {
+          margin-right: 20px;
+      }
+
+      @include net-book {
+          width: 100%;
+          flex: auto;
+          margin-bottom: 20px;
+      }
+
+      @include phone-max {
+          margin-right: 0;
+      }
+
+      & form {
+          display: flex;
+          flex: .8;
+          justify-content: space-between;
+          align-items: center;
+
+          & .btn {
+              margin-left: 20px;
+          }
+
+          @include phone-max {
+              flex-direction: column;
+              width: 100%;
+
+              & .btn {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+          }
+      }
+  }
+
+  &__form-title {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 18px;
+      margin-right: 20px;
+
+      @include desktop {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      @include phone-max {
+        color: #808080;
+        text-transform: none;
+      }
+  }
+
+  &__mail {
+      display: flex;
+      align-items: center;
+
+      @include net-book {
+          margin-right: 20px;
+      }
+
+      & a {
+          display: flex;
+          align-items: center;
+
+          &::before {
+              content: "";
+              background: url("../../img/mail.png");
+              display: inline-block;
+              width: 32px;
+              height: 23px;
+              margin-right: 20px;
+
+              @include phone-max {
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: 50%;
+              }
+          }
+      }
+  }
+
+  &__phone {
+      display: flex;
+      align-items: center;
+
+      & a {
+          display: flex;
+          align-items: center;
+
+          &::before {
+              content: "";
+              background: url("../../img/phone.png");
+              display: inline-block;
+              width: 25px;
+              height: 25px;
+              margin-right: 20px;
+
+              @include phone-max {
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: 50%;
+              }
+          }
+      }
+  }
+
+  &__menu {
+      display: flex;
+      justify-content: space-between;
+
+      @include net-book {
+          flex-wrap: wrap;
+      }
+
+      @include laptop {
+          justify-content: space-between;
+      }
+  }
+
+  &__block {
+      @include net-book {
+          width: 22%;
+          margin-right: 20px;
+          margin-bottom: 20px;
+      }
+
+      @include laptop {
+        width: 45%;
+      }
+
+      @include phone-max {
+        width: 100%;
+        margin-right: 0;
+      }
+  }
+
+  &__block-title {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #cbcbcb;
+    position: relative;
+
+    @include phone-max {
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #333333;
+    }
+
+    &.active {
+        color: $colorRed;
+    }
+  }
+
+  &__list {
+    @include phone-max {
+        opacity: 0;
+        visibility: hidden;
+        transform: scaleY(0);
+        transform-origin: 0 0;
+        max-height: 0;
+        transition: all .4s;
+
+        &.active {
+            transform: scaleY(1);
+            max-height: 250px;
+            margin-top: 20px;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+  }
+
+  &__item {
+      &:not(:last-child) {
+          margin-bottom: 20px;
+      }
+  }
+
+  &__list-big {
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+
+      & li {
+        @include phone-max {
+            border-bottom: 1px solid #333333;
+            padding-bottom: 20px;
+        }
+
+          &:not(:last-child) {
+            margin-bottom: 38px;
+  
+            @include phone-max {
+              margin-bottom: 20px;
+            }
+        }
+      }
+  }
+}

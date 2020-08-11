@@ -1,0 +1,122 @@
+.sticky-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+
+  &__logo {
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__sity {
+    & a {
+      display: flex;
+      align-items: center;
+      color: #197dd0;
+  
+      &::before {
+        content: "";
+        background: url("../../img/gps.png");
+        width: 11px;
+        height: 16px;
+        display: inline-block;
+        margin-right: 8px;
+      }
+    }
+
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__seach {
+    width: 35%;
+  }
+
+  &__input-box {
+    position: relative;
+    
+    &::after {
+      content: "";
+      background: url("../../img/seach.png");
+      width: 15px;
+      height: 15px;
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    color: $colorDarkGray;
+    flex: .5;
+
+    & li:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    @include laptop {
+      flex: .8;
+    }
+  }
+
+  &__phone {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      border: 5px solid transparent;
+      border-left: 5px solid $colorRed;
+      border-right-width: 0;
+      margin-right: 5px;
+      display: block;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  &__basket {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    & a {
+      color: $colorRed;
+      text-decoration: underline;
+    }
+    
+    &::before {
+      content: "";
+      background: url("../../img/basket.png");
+      display: inline-block;
+      width: 33px;
+      height: 27px;
+      opacity: 0.84;
+      margin-right: 20px;
+    }
+
+    span {
+      width: 18px;
+      height: 18px;
+      background-color: $colorRed;
+      border-radius: 50%;
+      color: $colorWhite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      position: absolute;
+      top: -6px;
+      left: 24px;
+    }
+  }
+}

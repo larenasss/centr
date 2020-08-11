@@ -1,0 +1,15 @@
+.title {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  font-family: 'MontHD';
+
+  &_midlle {
+    font-size: 30px;
+  }
+
+  @include phone-max {
+    font-size: 26px;
+  }
+
+}

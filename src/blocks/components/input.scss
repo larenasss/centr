@@ -1,0 +1,25 @@
+.input {
+  border-radius: 3px;
+  border: solid 1px #d9d9d9;
+  background-color: #f8f8f8;
+  padding: 14px 30px;
+  width: 100%;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.input-seach {
+  border-radius: 6px;
+  box-shadow: 0 0 2px 0 #222222;
+  padding: 10px 20px;
+  width: 100%;
+  min-width: 210px;
+
+  &::placeholder {
+    color: rgba(208, 207, 207, 0.57);
+  }
+
+  &_big {
+    padding: 12px 20px;
+  }
+}

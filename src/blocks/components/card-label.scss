@@ -1,0 +1,54 @@
+.card-label {
+  margin-bottom: 40px;
+
+  @include phone-max {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+
+    @include tablets {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    border-radius: 3px;
+    background-color: #faedee; 
+    padding: 2px 8px;
+    min-width: 89px;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    @include tablets {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      margin-bottom: 10px;
+    }
+
+    &.red {
+      color: #f81d41;
+    }
+
+    &.green {
+      color: #12b130;
+    }
+
+    &.violet {
+      color: #7945fe;
+    }
+
+    &.orange {
+      color: #ff8400;
+    }
+
+    &.pink {
+      color: #f635dd;
+    }
+  }
+}

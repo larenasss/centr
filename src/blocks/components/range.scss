@@ -1,0 +1,42 @@
+.noUi-horizontal {
+  height: 5px;
+}
+
+.noUi-connect {
+  background: $colorRed;
+}
+
+.noUi-touch-area {
+  background: url("../../img/arrow-range.png");
+  width: 13px;
+  height: 7px;
+  display: block;
+}
+
+.noUi-handle {
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.noUi-handle {
+  box-shadow: none;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 15px;
+  height: 15px;
+  outline: none;
+  cursor: pointer;
+  right: -9px;
+  top: 4px;
+}

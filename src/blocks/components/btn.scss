@@ -1,0 +1,43 @@
+.btn {
+  border-radius: 6px;
+  background-color: $colorRed;
+  padding: 9px 10px;
+  width: 100%;
+  color: $colorWhite;
+  font-family: 'MontHD';
+
+  &_max {
+    display: inline-block;
+    width: auto;
+    padding: 30px 100px;
+    font-size: 18px;
+    font-weight: 900;
+
+    @include desktop {
+      padding: 20px 70px;
+    }
+  }
+}
+
+.btn-custom {
+  border-radius: 3px;
+  padding: 12px 20px;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 900;
+
+  &_green {
+    background-color: #2fb145;
+    color: $colorWhite;
+  }
+
+  &_red {
+    border: solid 2px $colorRed;
+    color: $colorRed;
+  }
+
+  &_blue {
+    border: solid 2px $colorBlue;
+    color: $colorBlue;
+  }
+}

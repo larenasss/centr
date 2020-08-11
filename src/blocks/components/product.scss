@@ -1,0 +1,181 @@
+.product {
+  display: flex;
+  margin-left: -12px;
+  margin-right: -12px;
+
+  @include tablets {
+    flex-wrap: wrap;
+  }
+
+  @include phone-max {
+    padding-top: 20px;
+  }
+
+  &__item {
+    padding: 12px;
+
+    @include tablets {
+      width: 50%;
+    }
+
+    @include phone-middle {
+      width: 100%;
+    }
+  }
+
+  &_catalog {
+    flex-wrap: wrap;
+    margin-top: -12px;
+    margin-right: 20px;
+
+    @include tablets {
+      margin-right: -12px;
+    }
+
+    & li {
+      width: 25%;
+      max-width: 315px;
+
+      @include desktop {
+        width: 50%;
+        max-width: none;
+      }
+
+      @include phone-middle {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.product-cart {
+  border-radius: 6px;
+  box-shadow: 0 0 3px 0 rgba(44, 44, 44, 0.4);
+  padding: 16px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    color: #929292;
+  }
+
+  &__check {
+    & label {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+
+    & input {
+      display: none;
+    }
+  }
+
+  &__stock-actual {
+    text-align: end;
+
+    &_out {
+      text-decoration: line-through;
+    }
+  }
+
+  &__stock-discount {
+    background-color: $colorGreen;
+    padding: 0 8px;
+    color: #fefefe;
+    border-radius: 4px;
+    line-height: 1.57;
+  }
+
+  &__pic {
+    margin-bottom: 14px;
+
+    & img {
+      margin: 0 auto;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__value {
+    color: #8a8a8a;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    color: #525252;
+  }
+
+  &__body {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 12px;
+  }
+
+  &__body-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__like {
+    width: 40px;
+    min-width: 40px;
+    margin-right: 10px;
+    height: 40px;
+    border-radius: 6px;
+    border: solid 1px #d9d9d9;
+    background: url("../../img/heart.png") center no-repeat;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+
+    & .rating {
+      margin-right: 8px;
+    }
+  }
+
+  &__comments {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      background: url("../../img/comment.png");
+      width: 15px;
+      height: 13px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+
+  &__credit {
+    color: #848484;
+  }
+
+  &__price-actual {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

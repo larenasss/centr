@@ -1,0 +1,101 @@
+$bp-desktop-hd: 1600px;
+$bp-desktopHeight: 768px;
+$bp-desktop: 1366px;
+$bp-net-book: 1200px;
+$bp-laptop: 992px;
+$bp-tablets: 768px;
+$bp-phone-max: 480px;
+$bp-phone-middle: 390px;
+$bp-phone-small: 340px;
+
+// colors
+
+$colorBlack: #282828;
+$colorWhite: #ffffff;
+$colorGray: #5d5d5d;
+$colorDarkGray: #3b3b3c;
+$colorBlue: #205dcc;
+$colorRed: #ff313b;
+$colorGreen: #1ebb22;
+$coloYellow: #ffbd0a;
+
+
+// Стрелки в хлебных крошках и пагинации
+@mixin arrow($color) {
+  border-right: 1px solid $color;
+  border-bottom: 1px solid $color;
+}
+
+@mixin desktopHeight {
+  @media only screen and (max-height: $bp-desktopHeight) {
+    @content;
+  }
+}
+
+@mixin desktopHd {
+  @media only screen and (max-width: $bp-desktop-hd) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (max-width: $bp-desktop) {
+    @content;
+  }
+}
+
+@mixin net-book {
+  @media only screen and (max-width: $bp-net-book) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (max-width: $bp-laptop) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media only screen and (max-width: $bp-tablets) {
+    @content;
+  }
+}
+
+@mixin phone-max {
+  @media only screen and (max-width: $bp-phone-max) {
+    @content;
+  }
+}
+
+@mixin phone-middle {
+  @media only screen and (max-width: $bp-phone-middle) {
+    @content;
+  }
+}
+
+@mixin phone-small {
+  @media only screen and (max-width: $bp-phone-small) {
+    @content;
+  }
+}
+
+.mobile-none {
+  @include phone-max {
+    display: none;
+  }
+}
+
+.tablets-none {
+  @include tablets {
+    display: none;
+  }
+}
+
+.desctop-none {
+  display: none;
+
+  @include tablets {
+    display: flex;
+  }
+}

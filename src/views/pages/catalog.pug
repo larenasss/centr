@@ -1,0 +1,307 @@
+extends ../layouts/default
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+		.main-content
+			include ../../blocks/modules/sidebar/sidebar
+			main.main
+				.breadcrumb-mobile
+					.breadcrumb-mobile__content
+						a(href="#").breadcrumb-mobile__prev Шиномонтажное оборудование
+					.breadcrumb-mobile__filter
+						button.breadcrumb-mobile__popular По популярности
+						button.breadcrumb-mobile__all Фильтры
+					.nav-menu
+						ul.nav-menu__list
+							li.nav-menu__item
+								a(href="") Главное меню
+							li.nav-menu__item
+								a(href="") Шиномонтажное оборудование
+							.nav-menu__title Шиномонтажные станки
+							a(href="").nav-menu__show Показать все
+							ul.nav-submenu
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+								li.nav-submenu__item
+									a(href="") Может быть длинныммм и не очень
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+				.container.container_page
+					.breadcrumb
+						ul.breadcrumb__list
+							li.breadcrumb__item 
+								a.breadcrumb__link(href="") Главная
+							li.breadcrumb__item
+								a.breadcrumb__link(href="") Каталог
+							li.breadcrumb__item.active 
+								a.breadcrumb__link(href="") Шиномонтажное оборудование
+					h1.title.title_middle.mobile-none Шиномонтажное оборудование
+					.page-menu
+						ul
+							li.page-menu__item
+								a(href="") Легковые станки
+							li.page-menu__item
+								a(href="") Грузовые станки
+							li.page-menu__item
+								a(href="") Импортные станки 
+							li.page-menu__item
+								a(href="") Автоматические станки
+							li.page-menu__item
+								a(href="") Легковые станки
+							li.page-menu__item
+								a(href="") Грузовые станки
+							li.page-menu__item
+								a(href="") Импортные станки 
+							li.page-menu__item
+								a(href="") Автоматические станки
+							li.page-menu__item
+								a(href="") Легковые станки
+							li.page-menu__item
+								a(href="") Грузовые станки
+							a(href="").page-menu__next
+					.page-filter
+						.page-filter__title Сортировать по:
+						ul
+							li.page-filter__item
+								a(href="") популярности
+							li.page-filter__item
+								a(href="") цене
+							li.page-filter__item
+								a(href="") названию
+							li.page-filter__item.active
+								a(href="") рейтингу
+							li.page-filter__item
+								a(href="") обзорам
+							li.page-filter__item
+								a(href="") отзывам
+					.catalog-content
+						ul.product.product_catalog
+							li.product__item
+								include  ../../blocks/modules/product-cart/product-cart
+							li.product__item
+								include  ../../blocks/modules/product-cart/product-cart
+							li.product__item
+								include  ../../blocks/modules/product-cart/product-cart
+							li.product__item
+								include  ../../blocks/modules/product-cart/product-cart
+							li.product__item
+								include  ../../blocks/modules/product-cart/product-cart
+							li.product__item
+								include  ../../blocks/modules/product-cart/product-cart
+							li.product__item
+								include  ../../blocks/modules/product-cart/product-cart
+							li.product__item
+								include  ../../blocks/modules/product-cart/product-cart
+							li.product__item
+								include  ../../blocks/modules/product-cart/product-cart
+							li.product__item
+								include  ../../blocks/modules/product-cart/product-cart
+						.filter
+							.filter__content
+								.filter__top
+									.filter__title Фильтр
+									button.filter__clear Очистить
+								.filter__block
+									.filter__block-title Показывать товар
+									ul.filter__block-desc
+										li.active В наличии;
+										li Есть в магизине;
+										li Под заказ;
+										li Самовывоз со склада;
+										li В магазине;
+										li Доставка по адресу;
+								.filter__block
+									.filter__block-title Бренд
+									ul.filter__block-desc
+										li.active SICE;
+										li WERTHER;
+										li Storm;
+										li Hofmann;
+										li SICE;
+										li Hofmann;
+										li SICE;
+										li Storm;
+										li WERTHER;
+										li Storm;  
+										div WERTHER;
+										li Storm;
+										li Storm; 
+								.filter__block
+									.filter__block-title Размер
+									ul.filter__block-desc
+										li.active 1,5х2,3;
+										li 1,9х2,8;
+										li 2,1х3,1;
+										li 2,4х4,6;
+										li 1,5х2,3; 
+										li 1,9х2,8; 
+										li 2,4х4,6;
+										li 2,4х4,6; 
+										li 1,5х2,3;
+										li 1,9х2,8;
+								.filter__block
+									.filter__block-title Стоимость
+									.filter-slider
+										.filter-slider__range#js-filter-slider__range
+										.filter-slider__inputs.js-filter-slider__inputs
+											.filter-slider__input.js-range-input-one
+											.filter-slider__input.js-range-input-two
+								.filter__block
+									.filter__block-title Бренд
+									ul.filter__block-desc
+										li SICE;       
+										li WERTHER;
+										li Storm;
+										li Hofmann;
+										li SICE; 
+										li WERTHER;
+										li Storm;
+					.pagination
+						.pagination__content
+							a(href="").pagination__left-arrow
+							ul.pagination__list
+								li.pagination__item
+									a(href="").pagination__btn 1
+								li.pagination__item
+									a(href="").pagination__btn 2
+								li.pagination__item.active
+									a(href="").pagination__btn 3
+								li.pagination__item
+									a(href="").pagination__btn 4
+								li.pagination__item
+									a(href="").pagination__btn ...
+								li.pagination__item
+									a(href="").pagination__btn 12
+							a(href="").pagination__right-arrow
+					.filter-mobile
+						.filter-mobile__content
+							.filter-mobile__top
+								.filter-mobile__title Фильтр
+								.filter-mobile__clear Очистить
+								button.filter-mobile__close
+							.filter-mobile__block
+								.filter-mobile__box
+									.filter-mobile__subtitle Показать товар
+									.filter-mobile__clear Очистить
+								ul.filter-mobile__list
+									li
+										label В наличии
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label Самовывоз со склада
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label Есть в магазине
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label В магазине
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label Под заказ
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label Доставка по адресу
+											input(type="checkbox")
+											.checkbox.checkbox_white
+							.filter-mobile__block
+								.filter-mobile__box
+									.filter-mobile__subtitle Бренд 
+									.filter-mobile__clear Очистить
+								ul.filter-mobile__list
+									li
+										label SICE
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label WERTHER
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label Storm
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label Hofmann
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label SICE
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label SICE
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label SICE
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label SICE
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label SICE
+											input(type="checkbox")
+											.checkbox.checkbox_white
+							.filter-mobile__block
+								.filter-mobile__box
+									.filter-mobile__subtitle Размер
+									.filter-mobile__clear Очистить
+								ul.filter-mobile__list 
+									li
+										label 2,1х3,1
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label 2,1х3,1
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label 2,1х3,1
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label 2,1х3,1
+											input(type="checkbox")
+											.checkbox.checkbox_white
+									li
+										label 2,1х3,1
+											input(type="checkbox")
+											.checkbox.checkbox_white
+							.filter-mobile__block
+								.filter-mobile__box
+									.filter-mobile__subtitle Стоимость
+									.filter-mobile__clear Очистить
+								.filter-mobile__bottom
+									.filter-mobile__inputs
+										label
+											.filter-mobile__text От
+											input(type="text", placeholder="24000")
+										label
+											.filter-mobile__text До
+											input(type="text", placeholder="24000")
+									button.btn Применить фильтр
+		block footer
+		include ../../blocks/modules/footer/footer
+block scripts
+	script(src="js/main.js")
+	script(src="js/vendor.js")

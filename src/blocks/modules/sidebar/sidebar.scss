@@ -1,0 +1,39 @@
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 240px;
+  box-shadow: 0 0 4px 0 rgba(44, 44, 44, 0.29);
+  height: 100%;
+
+  &.active {
+    position: fixed;
+    top: 75px;
+  }
+
+  @include laptop {
+    display: none;
+  }
+
+  &__item {
+    line-height: normal;
+    color: $colorGray;
+    padding: 14px 20px;
+
+    &.active {
+      background-color: $colorRed;
+      color: $colorWhite;
+    }
+    
+    & a {
+      display: flex;
+      align-items: center;
+
+      & img {
+        width: 29px;
+        height: 31px;
+        margin-right: 18px;
+      }
+    }
+  }
+}

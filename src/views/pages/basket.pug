@@ -1,0 +1,209 @@
+extends ../layouts/default
+
+block content
+  .wrapper
+    include ../../blocks/modules/header/header
+    .main-content
+      include ../../blocks/modules/sidebar/sidebar
+      main.main
+        .breadcrumb-mobile.breadcrumb-mobile_no-margin
+          .breadcrumb-mobile__content.breadcrumb-mobile__content_flex-box
+            .breadcrumb-mobile__left
+              .breadcrumb-mobile__top Корзина
+              .breadcrumb-mobile__desc ( 4 товара 127 кг)
+            .breadcrumb-mobile__right
+              .breadcrumb-mobile__price 380 000 &#8381
+              .breadcrumb-mobile__descount скидка
+                span  - 35000
+          .nav-menu
+            ul.nav-menu__list
+              li.nav-menu__item
+                a(href="") Главное меню
+              li.nav-menu__item
+                a(href="") Шиномонтажное оборудование
+              .nav-menu__title Шиномонтажные станки
+              a(href="").nav-menu__show Показать все
+              ul.nav-submenu
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Может быть длинныммм и не очень
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+        .container.container_page.container_basket
+          .breadcrumb
+            ul.breadcrumb__list
+              li.breadcrumb__item 
+                a.breadcrumb__link(href="") Главная
+              li.breadcrumb__item
+                a.breadcrumb__link(href="") Каталог
+              li.breadcrumb__item.active 
+                a.breadcrumb__link(href="") Корзина
+          .basket
+            .basket__items
+              .basket__top
+                .basket__icons
+                  button.basket__icon
+                  button.basket__icon-like
+                label Выбрать все
+                  input(type="checkbox")
+                  .checkbox.checkbox_big
+                button.basket__all-delete Удалить выбранные
+              .basket__title.mobile-none Товары на Centr-to.ru
+              .basket__body
+                ul.basket__list
+                  li.basket__item
+                    .product-item
+                      .product-item__left
+                        label
+                          input(type="checkbox")
+                          .checkbox.checkbox_big
+                        .product-item__pic
+                          img(src="/img/product_item_1.png", alt="alt")
+                        .product-item__desc
+                          .product-item__title Шиномонтажный станок Zinvo 38-N5
+                          .product-item__color Красный/синий
+                          button.product-item__credit Кредит от 8.900 руб/мес
+                          .product-item__buttons
+                            button.product-item__btn В избранное
+                            button.product-item__btn Удалить
+                          .product-item__price.desctop-none 150 000 &#8381
+                      .product-item__quantity
+                        button.product-item__minus -
+                        .product-item__count 1
+                        button.product-item__plus +
+                      .product-item__price.tablets-none 150 000 &#8381
+                  li.basket__item
+                    .product-item
+                      .product-item__left
+                        label
+                          input(type="checkbox")
+                          .checkbox.checkbox_big
+                        .product-item__pic
+                          img(src="/img/product_item_1.png", alt="alt")
+                        .product-item__desc
+                          .product-item__title Шиномонтажный станок Zinvo 38-N5
+                          .product-item__color Красный/синий
+                          button.product-item__credit Кредит от 8.900 руб/мес
+                          .product-item__buttons
+                            button.product-item__btn В избранное
+                            button.product-item__btn Удалить
+                          .product-item__price.desctop-none 150 000 &#8381
+                      .product-item__quantity
+                        button.product-item__minus -
+                        .product-item__count 1
+                        button.product-item__plus +
+                      .product-item__price.tablets-none 150 000 &#8381
+                  li.basket__item
+                    .product-item
+                      .product-item__left
+                        label
+                          input(type="checkbox")
+                          .checkbox.checkbox_big
+                        .product-item__pic
+                          img(src="/img/product_item_1.png", alt="alt")
+                        .product-item__desc
+                          .product-item__title Шиномонтажный станок Zinvo 38-N5
+                          .product-item__color Красный/синий
+                          button.product-item__credit Кредит от 8.900 руб/мес
+                          .product-item__buttons
+                            button.product-item__btn В избранное
+                            button.product-item__btn Удалить
+                          .product-item__price.desctop-none 150 000 &#8381
+                      .product-item__quantity
+                        button.product-item__minus -
+                        .product-item__count 1
+                        button.product-item__plus +
+                      .product-item__price.tablets-none 150 000 &#8381
+                  li.basket__item
+                    .product-item
+                      .product-item__left
+                        label
+                          input(type="checkbox")
+                          .checkbox.checkbox_big
+                        .product-item__pic
+                          img(src="/img/product_item_1.png", alt="alt")
+                        .product-item__desc
+                          .product-item__title Шиномонтажный станок Zinvo 38-N5
+                          .product-item__color Красный/синий
+                          button.product-item__credit Кредит от 8.900 руб/мес
+                          .product-item__buttons
+                            button.product-item__btn В избранное
+                            button.product-item__btn Удалить
+                          .product-item__price.desctop-none 150 000 &#8381
+                      .product-item__quantity
+                        button.product-item__minus -
+                        .product-item__count 1
+                        button.product-item__plus +
+                      .product-item__price.tablets-none 150 000 &#8381
+                  li.basket__item
+                    .product-item
+                      .product-item__left
+                        label
+                          input(type="checkbox")
+                          .checkbox.checkbox_big
+                        .product-item__pic
+                          img(src="/img/product_item_1.png", alt="alt")
+                        .product-item__desc
+                          .product-item__title Шиномонтажный станок Zinvo 38-N5
+                          .product-item__color Красный/синий
+                          button.product-item__credit Кредит от 8.900 руб/мес
+                          .product-item__buttons
+                            button.product-item__btn В избранное
+                            button.product-item__btn Удалить
+                          .product-item__price.desctop-none 150 000 &#8381
+                      .product-item__quantity
+                        button.product-item__minus -
+                        .product-item__count 1
+                        button.product-item__plus +
+                      .product-item__price.tablets-none 150 000 &#8381
+            .basket__pay
+              .basket-pay
+                .basket-pay__content
+                  .basket-pay__top
+                    .basket-pay__title Ваша корзина
+                    ul.basket-pay__items
+                      li 3 товара
+                      li 127 кг
+                  .basket-pay__body
+                    .basket-pay__product
+                      .basket-pay__product-item Товары (3)
+                      .basket-pay__product-price 380 000 &#8381
+                    .basket-pay__discount
+                      .basket-pay__discount-top
+                        .basket-pay__discount-item Скидка
+                        .basket-pay__discount-price - 35 000 &#8381
+                      button.basket-pay__discount-btn Подробнее
+                  .basket-pay__bottom
+                    .basket-pay__bottom-top
+                      .basket-pay__bottom-title Общая стоимость
+                      .basket-pay__bottom-price 345 000 &#8381
+                    form.basket-pay__form(action="")
+                      input(type="text", placeholder="Ваше имя").input
+                      input(type="text", placeholder="Ваш телефон").input
+                      button.btn-custom.btn-custom_green Оформить заказ
+              .credit
+                .credit__content
+                  button.btn-custom.btn-custom_red Оформить Кредит
+                  p Онлайн оформление кредита - решение за 5 минут. Вы можете выбрать срок кредитования и ежемесячный платеж самостоятельно
+              .leasing
+                .leasing__content
+                  button.btn-custom.btn-custom_blue Оформить в лизинг
+                  p Онлайн оформление лизинг - решение за 5 минут. Вы можете выбрать срок кредитования и ежемесячный платеж самостоятельно
+    block footer
+      include ../../blocks/modules/footer/footer  
+block scripts
+  script(src="js/main.js")
+  script(src="js/vendor.js")
