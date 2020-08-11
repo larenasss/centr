@@ -13,7 +13,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     content: "";
-    background: url("../../img/arrow-check.png");
+    background: url("../img/arrow-check.png");
     display: block;
     background-size: cover;
     width: 10px;
@@ -41,7 +41,7 @@
     border-radius: 50%;
 
     &::before {
-      background: url("../../img/checkbox-circle.png");
+      background: url("../img/checkbox-circle.png");
       width: 18px;
       height: 14px;
       left: 58%;

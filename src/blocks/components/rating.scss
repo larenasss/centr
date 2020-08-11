@@ -6,7 +6,7 @@
     color: #dcdcdc;
     cursor: pointer;
     transition: .2s;
-    background: url("../../img/zv.png");
+    background: url("../img/zv.png");
     width: 15px;
     height: 15px;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 
 .rating__item:hover,
 .rating__item:hover ~ .rating__item {
-  background: url("../../img/zv-hover.png");
+  background: url("../img/zv-hover.png");
   background-repeat: no-repeat;
 }
 
@@ -24,6 +24,6 @@
 .rating[data-total-value="3"] .rating__item:nth-child(n + 3),
 .rating[data-total-value="4"] .rating__item:nth-child(n + 2),
 .rating[data-total-value="5"] .rating__item:nth-child(n + 1) {
-  background: url("../../img/zv-hover.png");
+  background: url("../img/zv-hover.png");
   background-repeat: no-repeat;
 }

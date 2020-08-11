@@ -88,7 +88,7 @@
   }
 
   &__close {
-    background: url("../../img/close-popup-basket.png");
+    background: url("../img/close-popup-basket.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 20px;
@@ -137,7 +137,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    background: url("../../img/close-popup-basket.png");
+    background: url("../img/close-popup-basket.png");
     width: 14px;
     height: 14px;
     display: block;
@@ -238,7 +238,7 @@
 
       &::before {
         content: "";
-        background: url("../../img/arrow-red.png");
+        background: url("../img/arrow-red.png");
         position: absolute;
         top: 50%;
         left: 50%;

@@ -108,7 +108,7 @@
       width: 13px;
       height: 13px;
       display: block;
-      background: url("../../../img/seach.png");
+      background: url("../img/seach.png");
     }
 
     & input {
@@ -138,7 +138,7 @@
 
     &::before {
       content: "";
-      background: url("../../img/filter-mobile-popular.png");
+      background: url("../img/filter-mobile-popular.png");
       width: 22px;
       height: 20px;
       display: inline-block;
@@ -153,7 +153,7 @@
 
     &::before {
       content: "";
-      background: url("../../img/filter-mobile.png");
+      background: url("../img/filter-mobile.png");
       width: 19px;
       height: 20px;
       display: inline-block;
@@ -167,7 +167,7 @@
 
     &::before {
       content: "";
-      background: url("../../img/arrow-prev.png");
+      background: url("../img/arrow-prev.png");
       width: 19px;
       height: 14px;
       display: inline-block;

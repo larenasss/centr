@@ -98,7 +98,7 @@
   }
 
   &__video {
-    background: url("../../img/card-video.png");
+    background: url("../img/card-video.png");
     width: 41px;
     height: 41px;
     background-size: cover;
@@ -261,7 +261,7 @@
 
     &::before {
       content: "";
-      background: url("../../img/card_comment.png");
+      background: url("../img/card_comment.png");
       width: 19px;
       height: 18px;
       display: block;
@@ -296,7 +296,7 @@
       &::before {
         content: "";
         display: inline-block;
-        background: url("../../img/card_delivery.png");
+        background: url("../img/card_delivery.png");
         width: 24px;
         height: 19px;
         margin-right: 15px;
@@ -308,7 +308,7 @@
       &::before {
         content: "";
         display: inline-block;
-        background: url("../../img/card_auto.png");
+        background: url("../img/card_auto.png");
         width: 29px;
         height: 16px;
         margin-right: 15px;
@@ -380,7 +380,7 @@
     &::before {
       content: "";
       display: inline-block;
-      background: url("../../img/card_compare.png");
+      background: url("../img/card_compare.png");
       width: 20px;
       height: 16px;
       margin-right: 15px;
@@ -394,7 +394,7 @@
     &::before {
       content: "";
       display: inline-block;
-      background: url("../../img/crad_like.png");
+      background: url("../img/crad_like.png");
       width: 16px;
       height: 14px;
       margin-right: 15px;
@@ -636,7 +636,7 @@
     height: 40px;
     border-radius: 6px;
     border: solid 1px #d9d9d9;
-    background: url("../../img/heart.png") center no-repeat;
+    background: url("../img/heart.png") center no-repeat;
     background-color: #f9dcdc;
   }
 }
@@ -682,12 +682,12 @@
   }
 
   &__btn-prev {
-    background: url('../../img/arrow-slider-card.png');
+    background: url('../img/arrow-slider-card.png');
     left: -20px;
   }
 
   &__btn-next {
-    background: url('../../img/arrow-slider-card.png');
+    background: url('../img/arrow-slider-card.png');
     transform: translateY(-50%) rotate(180deg);
     right: -20px;
   }
@@ -703,7 +703,7 @@
 
     &::before {
       content: "";
-      background: url('../../img/arrow-filter-mobile.png');
+      background: url('../img/arrow-filter-mobile.png');
       width: 16px;
       height: 9px;
       display: block;
@@ -726,7 +726,7 @@
 
     &::before {
       content: "";
-      background: url('../../img/arrow-filter-mobile.png');
+      background: url('../img/arrow-filter-mobile.png');
       width: 16px;
       height: 9px;
       display: block;

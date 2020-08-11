@@ -113,7 +113,7 @@
 
   &::before {
     content: "";
-    background: url("../../img/arrow-slider-min.png");
+    background: url("../img/arrow-slider-min.png");
     width: 11px;
     height: 21px;
     display: block;
@@ -140,7 +140,7 @@
     top: 50%;
     left: -40px;
     transform: translateY(-50%);
-    background: url("../../img/arrow-slider.png");
+    background: url("../img/arrow-slider.png");
     width: 23px;
     height: 42px;
     cursor: pointer;
@@ -160,7 +160,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%) rotate(180deg);
-    background: url("../../img/arrow-slider.png");
+    background: url("../img/arrow-slider.png");
     width: 23px;
     height: 42px;
     right: -40px;

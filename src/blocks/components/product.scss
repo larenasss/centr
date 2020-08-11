@@ -143,7 +143,7 @@
     height: 40px;
     border-radius: 6px;
     border: solid 1px #d9d9d9;
-    background: url("../../img/heart.png") center no-repeat;
+    background: url("../img/heart.png") center no-repeat;
   }
 
   &__rating {
@@ -161,7 +161,7 @@
 
     &::before {
       content: "";
-      background: url("../../img/comment.png");
+      background: url("../img/comment.png");
       width: 15px;
       height: 13px;
       background-repeat: no-repeat;
