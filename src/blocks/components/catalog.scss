@@ -1,0 +1,7 @@
+.catalog-content {
+  display: flex;
+
+  @include tablets {
+    flex-direction: column-reverse;
+  }
+}

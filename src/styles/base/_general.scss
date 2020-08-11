@@ -1,12 +1,121 @@
-h1, h2, h3, h4, h5, h6, ul {
-    margin: 0;
-    padding: 0;
+@import "../helpers/variables";
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $colorBlack;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+  line-height: 1;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  line-height: 1.38;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  //width: 100%;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.main-content {
+  display: flex;
+  position: relative;
+}
+
+.main {
+  padding-left: 240px;
+  width: 100%;
+
+  @include laptop {
+    padding-left: 0;
+  }
+
+  &__block {
+    margin-bottom: 100px;
+  }
 }
 
 .container {
-    @include container();
-    @include sm(max-width, rem(510));
-    @include md(max-width, rem(690));
-    @include lg(max-width, rem(930));
-    @include xl(max-width, rem(1110));
+  padding: 0 5% 100px 5%;
+
+  @include tablets {
+    padding: 0 3%;
+  }
+
+  &_page {
+    padding: 0 30px 100px 30px;
+    background-color: #fafafa;
+
+    @include phone-max {
+     background-color: initial;
+    }
+  }
+
+  &_basket {
+    @include phone-max {
+      background-color: #f3f3f3;
+    }
+  }
 }
+

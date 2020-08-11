@@ -1,0 +1,318 @@
+.basket {
+  display: flex;
+
+  @include desktop {
+    flex-direction: column;
+  }
+
+  @include tablets {
+    padding-bottom: 80px;
+  }
+
+  &__items {
+    width: 70%;
+    border-radius: 6px;
+    box-shadow: 0 0 2px 0 rgba(44, 44, 44, 0.59);
+    margin-right: 30px;
+    background: $colorWhite;
+
+    @include desktop {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    @include phone-max {
+      box-shadow: none;
+    }
+  }
+
+  &__top {
+    display: flex;
+    padding: 20px 30px;
+
+    @include phone-max {
+      padding: 15px 3%;
+      margin: 0 -3%;
+      box-shadow: 0px 1px 2px 0 rgba(65, 65, 65, 0.35);
+      background: $colorWhite;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    & label {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+      color: #6d6d6d;
+      margin-right: 100px;
+
+      @include phone-max {
+        flex-direction: row;
+        margin-right: 0;
+
+        & .checkbox_big {
+          margin-right: 0;
+          margin-left: 15px;
+        }
+      }
+    }
+
+    & input {
+      display: none;
+    }
+  }
+
+  &__all-delete {
+    color: $colorRed;
+
+    @include phone-max {
+      display: none;
+    }
+  }
+
+  &__title {
+    padding: 12px 30px;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: 'MontHD';
+  }
+
+  &__body {
+    padding: 20px 30px;
+
+    @include phone-max {
+      padding: 0;
+    }
+  }
+
+  &__item {
+
+    @include phone-max {
+      box-shadow: 0 0 2px 0 rgba(65, 65, 65, 0.42);
+      margin: 0 -3%;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #cbcbcb;
+
+      @include phone-max {
+        border-bottom: 0;
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  &__pay {
+    width: 30%;
+
+    @include desktop {
+      width: 100%;
+    }
+  }
+
+  &__icons {
+    display: none;
+
+    @include phone-max {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    width: 25px;
+    height: 24px;
+    background: url("../../img/basket-icon.png");
+    display: inline-block;
+    margin-right: 25px;
+  }
+
+  &__icon-like {
+    width: 27px;
+    height: 24px;
+    background: url("../../img/icon-like.png");
+    display: inline-block;
+  } 
+}
+
+.basket-pay {
+  margin-bottom: 30px;
+
+  &__content {
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 0 2px 0 rgba(44, 44, 44, 0.59);
+
+    @include phone-max {
+      padding: 0 15px;
+      box-shadow: none;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+
+    @include desktopHd {
+      flex-direction: column;
+    }
+
+    @include desktop {
+      flex-direction: row;
+    }
+
+    @include phone-max {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'MontHD';
+
+    @include desktopHd {
+      margin-bottom: 10px;
+    }
+
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__items {
+    display: flex;
+    color: #7a7a7a;
+    font-size: 16px;
+
+    & li:not(:last-child) {
+      margin-right: 10px;
+      &::after {
+        content: '\2022';
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__body {
+    padding: 30px 0;
+    border-bottom: 1px solid #cbcbcb;
+    font-size: 16px;
+    margin-bottom: 30px;
+
+    @include phone-max {
+      display: none;
+    }
+  }
+
+  &__product {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__product-item {
+    color: #3f3e3e;
+  }
+
+  &__product-price {
+    font-weight: bold;
+    font-family: 'MontHD';
+  }
+
+  &__discount {
+    margin-top: 30px;
+  }
+
+  &__discount-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  &__discount-item {
+    color:#3f3e3e;
+  }
+
+  &__discount-price {
+    color: $colorRed;
+    font-weight: bold;
+    font-family: 'MontHD';
+  }
+
+  &__discount-btn {
+    color: $colorBlue;
+  }
+
+  &__bottom-price {
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'MontHD';
+  }
+
+  &__bottom-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @include desktopHd {
+      flex-direction: column;
+    }
+
+    @include desktop {
+      flex-direction: row;
+    }
+
+    @include phone-max {
+      display: none;
+    }
+  }
+
+  &__bottom-title {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'MontHD';
+
+    @include desktopHd {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.credit {
+  margin-bottom: 30px;
+
+  &__content {
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 0 2px 0 rgba(44, 44, 44, 0.59);
+
+    @include phone-max {
+      padding: 15px;
+    }
+
+    & p {
+      margin-top: 20px;
+      color: #b5b5b5;
+    }
+  }
+}
+
+.leasing {
+  &__content {
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 0 2px 0 rgba(44, 44, 44, 0.59);
+
+    @include phone-max {
+      padding: 15px;
+    }
+
+    & p {
+      margin-top: 20px;
+      color: #b5b5b5;
+    }
+  }
+}

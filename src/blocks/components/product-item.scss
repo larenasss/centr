@@ -1,0 +1,124 @@
+.product-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  background: $colorWhite;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  @include phone-max {
+    padding: 20px 3%;
+  }
+
+  & label {
+
+    @include tablets {
+      order: 1;
+      margin-left: 5px;
+      
+      & .checkbox {
+        margin-right: 0;
+      }
+    }
+  }
+
+  & input {
+    display: none;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    @include tablets {
+      margin-bottom: 20px;
+    }
+
+    @include phone-max {
+      align-items: flex-start;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  &__pic {
+    margin-right: 30px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 14px;
+
+    @include phone-max {
+      font-size: 14px;
+    }
+  }
+
+  &__color {
+    color: #9b9b9b;
+    margin-bottom: 16px;
+
+    @include phone-max {
+      font-size: 12px;
+    }
+  }
+
+  &__credit {
+    border-radius: 3px;
+    border: solid 1px #ff313b;
+    padding: 5px 30px;
+    color: $colorRed;
+    margin-bottom: 18px;
+  }
+
+  &__buttons {
+    display: flex;
+
+    @include tablets {
+      margin-bottom: 15px;
+    }
+
+    @include phone-max {
+      display: none;
+    }
+  }
+
+  &__btn {
+    color: $colorBlue;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+
+  &__quantity {
+    border-radius: 3px;
+    border: solid 1px #e5e5e5;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #7a7a7a;
+    margin-right: 10px;
+  }
+
+  &__minus {
+    padding: 10px 16px;
+  }
+
+  &__plus {
+    padding: 10px 16px;
+  }
+
+  &__price {
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'MontHD';
+    white-space: nowrap;
+  }
+}

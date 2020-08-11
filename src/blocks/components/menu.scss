@@ -1,0 +1,46 @@
+.menu-list {
+  display: flex;
+
+  @include tablets {
+    flex-direction: column;
+  }
+
+  &__column {
+    &:not(:last-child) {
+      margin-right: 100px;
+
+      @include laptop {
+        margin-right: 30px;
+      }
+
+      @include tablets {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__box {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 15px;
+  }
+
+  &__link {
+
+    & a {
+      display: block;
+      color: #868686;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

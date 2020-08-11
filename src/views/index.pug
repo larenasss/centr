@@ -1,11 +1,156 @@
 extends layouts/default
-include helpers/mixins
-
-block variables
-	- const title = "gulp-pug-starter"
 
 block content
-
+	.wrapper
+		include ../blocks/modules/header/header
+		.main-content
+			include ../blocks/modules/sidebar/sidebar
+			main.main
+				.breadcrumb-mobile.breadcrumb-mobile_no-margin
+					.breadcrumb-mobile__content.breadcrumb-mobile__content_index
+						.breadcrumb-mobile__input
+							input(type="text", placeholder="Поиск по сайту")
+					.nav-menu
+						ul.nav-menu__list
+							li.nav-menu__item
+								a(href="") Главное меню
+							li.nav-menu__item
+								a(href="") Шиномонтажное оборудование
+							.nav-menu__title Шиномонтажные станки
+							a(href="").nav-menu__show Показать все
+							ul.nav-submenu
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+								li.nav-submenu__item
+									a(href="") Может быть длинныммм и не очень
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+								li.nav-submenu__item
+									a(href="") Тут тайтл станка
+				.slider
+					ul.slider__list
+						li
+							picture
+								source(srcset="/img/main-slider_bg-mobile.png", media="(max-width: 480px)")
+								img(src="/img/main-slider_bg.png", alt="alt")
+							.slider__content
+								h1.slider__title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								button.btn.btn_max Оставить заявку
+						li
+							picture
+								source(srcset="/img/main-slider_bg-mobile.png", media="(max-width: 480px)")
+								img(src="/img/main-slider_bg.png", alt="alt")
+							.slider__content
+								h1.slider__title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								button.btn.btn_max Оставить заявку
+						li
+							picture
+								source(srcset="/img/main-slider_bg-mobile.png", media="(max-width: 480px)")
+								img(src="/img/main-slider_bg.png", alt="alt")
+							.slider__content
+								h1.slider__title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								button.btn.btn_max Оставить заявку
+						li
+							picture
+								source(srcset="/img/main-slider_bg-mobile.png", media="(max-width: 480px)")
+								img(src="/img/main-slider_bg.png", alt="alt")
+							.slider__content
+								h1.slider__title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								button.btn.btn_max Оставить заявку
+					.slider__btn
+						button.slider-btn.slider-btn__prev
+						button.slider-btn.slider-btn__next
+				.container
+					.main__block
+						h1.title Готовые решения
+						.slider-product
+							.slider-product__btn-prev.slider-product__btn-prev-one
+							ul.product.slider-product_one
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+							.slider-product__btn-next.slider-product__btn-next-one
+					.main__block
+						h1.title Хиты продаж шин
+						.slider-product
+							.slider-product__btn-prev.slider-product__btn-prev-two
+							ul.product.slider-product_two
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+							.slider-product__btn-next.slider-product__btn-next-two
+					.main__block
+						h1.title Продажа подьемников
+						.slider-product
+							.slider-product__btn-prev.slider-product__btn-prev-three
+							ul.product.slider-product_three
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+								li.product__item
+									include ../blocks/modules/product-cart/product-cart
+							.slider-product__btn-next.slider-product__btn-next-three
+		block footer
+		include ../blocks/modules/footer/footer
 block scripts
 	script(src="js/main.js")
 	script(src="js/vendor.js")

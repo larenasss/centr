@@ -1,0 +1,109 @@
+extends ../layouts/default
+
+block content
+  .wrapper
+    include ../../blocks/modules/header/header
+    .main-content
+      include ../../blocks/modules/sidebar/sidebar
+      main.main
+        .breadcrumb-mobile
+          .nav-menu
+            ul.nav-menu__list
+              li.nav-menu__item
+                a(href="") Главное меню
+              li.nav-menu__item
+                a(href="") Шиномонтажное оборудование
+              .nav-menu__title Шиномонтажные станки
+              a(href="").nav-menu__show Показать все
+              ul.nav-submenu
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Может быть длинныммм и не очень
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+        .container.container_page
+          .breadcrumb.breadcrumb_sub
+            ul.breadcrumb__list
+              li.breadcrumb__item 
+                a(href="").breadcrumb__link Главная
+              li.breadcrumb__item
+                a(href="").breadcrumb__link Каталог
+              li.breadcrumb__item.active 
+                a(href="").breadcrumb__link Шиномонтажное оборудование
+          h1.title.title_middle Шиномонтажное оборудование
+          .subcategory
+            ul.subcategory-list
+              li.subcategory-list__item
+                a(href="").subcategory-list__body
+                  .subcategory-list__pic
+                    img(src="/img/subcategory_item_1.png", alt="")
+                  .subcategory-list__desc
+                    .subcategory-list__title Шиномонтажные станки
+                    .subcategory-list__number ( 73 шт )
+              li.subcategory-list__item
+                a(href="").subcategory-list__body
+                  .subcategory-list__pic
+                    img(src="/img/subcategory_item_2.png", alt="")
+                  .subcategory-list__desc
+                    .subcategory-list__title Балансировочные станки
+                    .subcategory-list__number ( 73 шт )
+              li.subcategory-list__item
+                a(href="").subcategory-list__body
+                  .subcategory-list__pic
+                    img(src="/img/subcategory_item_1.png", alt="")
+                  .subcategory-list__desc
+                    .subcategory-list__title Шиномонтажные станки
+                    .subcategory-list__number ( 73 шт )
+              li.subcategory-list__item
+                a(href="").subcategory-list__body
+                  .subcategory-list__pic
+                    img(src="/img/subcategory_item_2.png", alt="")
+                  .subcategory-list__desc
+                    .subcategory-list__title Балансировочные станки
+                    .subcategory-list__number ( 73 шт )
+              li.subcategory-list__item
+                a(href="").subcategory-list__body
+                  .subcategory-list__pic
+                    img(src="/img/subcategory_item_1.png", alt="")
+                  .subcategory-list__desc
+                    .subcategory-list__title Шиномонтажные станки
+                    .subcategory-list__number ( 73 шт )
+              li.subcategory-list__item
+                a(href="").subcategory-list__body
+                  .subcategory-list__pic
+                    img(src="/img/subcategory_item_2.png", alt="")
+                  .subcategory-list__desc
+                    .subcategory-list__title Балансировочные станки
+                    .subcategory-list__number ( 73 шт )
+              li.subcategory-list__item
+                a(href="").subcategory-list__body
+                  .subcategory-list__pic
+                    img(src="/img/subcategory_item_1.png", alt="")
+                  .subcategory-list__desc
+                    .subcategory-list__title Шиномонтажные станки
+                    .subcategory-list__number ( 73 шт )
+              li.subcategory-list__item
+                a(href="").subcategory-list__body
+                  .subcategory-list__pic
+                    img(src="/img/subcategory_item_2.png", alt="")
+                  .subcategory-list__desc
+                    .subcategory-list__title Балансировочные станки
+                    .subcategory-list__number ( 73 шт )
+    block footer
+      include ../../blocks/modules/footer/footer  
+block scripts
+  script(src="js/main.js")
+  script(src="js/vendor.js")

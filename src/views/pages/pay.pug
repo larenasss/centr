@@ -1,0 +1,258 @@
+extends ../layouts/default
+
+block content
+  .wrapper
+    include ../../blocks/modules/header/header
+    .main-content
+      include ../../blocks/modules/sidebar/sidebar
+      main.main
+        .breadcrumb-mobile
+          .breadcrumb-mobile__content.breadcrumb-mobile__content_flex
+            .breadcrumb-mobile__logo
+              img(src="/img/logo-mobile.png", alt="")
+            .breadcrumb-mobile__pay
+              .pay__box-desc.pay__box-desc_mobile Оформляем 2 товара за 75 000 + бонус 12 500
+              button.pay__box-button
+          .nav-menu
+            ul.nav-menu__list
+              li.nav-menu__item
+                a(href="") Главное меню
+              li.nav-menu__item
+                a(href="") Шиномонтажное оборудование
+              .nav-menu__title Шиномонтажные станки
+              a(href="").nav-menu__show Показать все
+              ul.nav-submenu
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Может быть длинныммм и не очень
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+                li.nav-submenu__item
+                  a(href="") Тут тайтл станка
+          ul.list-prev-product
+            li
+              .list-prev-product__desc
+                .list-prev-product__title Шиномонтажный станок Zinvo 38-N5
+                .list-prev-product__subtitle Цвет: Красный   Количество: 1 шт 
+              .list-prev-product__price 150 000 &#8381
+            li
+              .list-prev-product__desc
+                .list-prev-product__title Шиномонтажный станок Zinvo 38-N5
+                .list-prev-product__subtitle Цвет: Красный   Количество: 1 шт 
+              .list-prev-product__price 150 000 &#8381
+            li
+              .list-prev-product__desc
+                .list-prev-product__title Шиномонтажный станок Zinvo 38-N5
+                .list-prev-product__subtitle Цвет: Красный   Количество: 1 шт 
+              .list-prev-product__price 150 000 &#8381
+        .container.container_basket
+          .breadcrumb
+            ul.breadcrumb__list
+              li.breadcrumb__item 
+                a.breadcrumb__link(href="") Главная
+              li.breadcrumb__item
+                a.breadcrumb__link(href="") Каталог
+              li.breadcrumb__item.active 
+                a.breadcrumb__link(href="") Оплата
+          .pay
+            .pay__box-title.mobile-none
+              h1.title.title_midlle Centr–to.ru
+              .pay__box-desc Оформляем 2 товара за 75 000 + 
+                span  бонус 12 500
+              button.pay__box-button
+            .pay__content
+              form(action="").pay__data
+                .pay__row
+                  .pay__title(data-count="1") Данныe покупателя
+                  .pay__box
+                    .tabs
+                      .tabs__btn
+                        .tabs__btn-item
+                          input#tabs-one(type="radio", name="tabs" , checked)
+                          label.tabs__label.js-label.active(for="tabs-one", data-tab="1") Физическое лицо
+                          input#tabs-two(type="radio", name="tabs")
+                          label.tabs__label.js-label(for="tabs-two", data-tab="2") Юридическое лицо
+                        button.login Есть учетная запись? Войти
+                      .tabs__content.active.tabs__content_one(data-tab="1")
+                        .tabs__box.tabs__box_column.tabs__box_left
+                          .tabs__input
+                            input(type="text", placeholder="Ф.И.О").input
+                          .tabs__input-desc Указывайте ФИО человека, который будет получать груз
+                          .tabs__input
+                            input(type="text", placeholder="Ваш телефон").input
+                        .tabs__box.tabs__box_column.tabs__box_right.tabs__box_bottom
+                          .tabs__box-block
+                            input(type="text" , placeholder="Ваш Email").input
+                            input(type="text" , placeholder="Доп. телефон").input
+                      .tabs__content(data-tab="2")
+                        .tabs__box.tabs__box_column.tabs__box_left
+                          .tabs__desc Введите ИНН, остальные данные загрузятся автоматические
+                          input(type="text", placeholder="Юр. адрес").input
+                        .tabs__box.tabs__box_column.tabs__box_right
+                          .tabs__input.tabs__input_one
+                            input(type="text", placeholder="ИНН").input
+                          .tabs__box-block
+                            input(type="text" , placeholder="ОГРН").input
+                            input(type="text" , placeholder="КПП").input
+                .pay__row
+                  .pay__title(data-count="2") Выберите способ получения
+                  .pay__box
+                    .pay__sity г. Санкт - Петербург
+                    .pay__box-top
+                      .tabs
+                        .tabs__btn
+                          .tabs__btn-item
+                            input#tabs-one-delivery(type="radio", name="tabs-delivery" , checked)
+                            label.tabs__label.active(for="tabs-one-delivery") Доставка
+                            input#tabs-two-delivery(type="radio", name="tabs-delivery")
+                            label.tabs__label(for="tabs-two-delivery") Самовывоз
+                        .tabs__content.tabs__content_show
+                          .tabs__box.tabs__box_left
+                            input(type="text"  , placeholder="Россия").input
+                          .tabs__box.tabs__box_right
+                            input(type="text"  , placeholder="Адрес").input
+                    .pay__stock
+                      .pay__stock-desc
+                        .pay__stock-top
+                          .pay__stock-box
+                            .pay__stock-label Кредит онлайн
+                            .pay__stock-title Centr–to.ru
+                          .pay__stock-box
+                            .pay__stock-address
+                              p ул. Тухачевского,  д 13а
+                              p Пн-Вс  9.00 - 21.00
+                            .pay__stock-delivery 5 дней
+                        button.pay__stock-btn Изменить интернет
+                      .pay__stock-maps
+                        img(src="/img/pay_maps.png", alt="alt")
+                .pay__row
+                  .pay__title(data-count="3") Выберите спопоб оплаты
+                  .pay__box
+                    ul.pay__list
+                      li.pay__item
+                        label В Кредит
+                          input(type="checkbox")
+                          .checkbox.checkbox_circle
+                        ul.list-logo
+                          li.list-logo__item
+                            img(src="/img/credit_logo_1.png", alt="")
+                          li.list-logo__item
+                            img(src="/img/credit_logo_2.png", alt="")
+                          li.list-logo__item
+                            img(src="/img/credit_logo_3.png", alt="")
+                          li.list-logo__item
+                            img(src="/img/credit_logo_4.png", alt="")
+                      li.pay__item
+                        label В Лизинг
+                          input(type="checkbox")
+                          .checkbox.checkbox_circle
+                        ul.list-logo
+                          li.list-logo__item
+                            img(src="/img/leasing_logo_0.png", alt="")
+                          li.list-logo__item
+                            img(src="/img/leasing_logo_1.png", alt="")
+                          li.list-logo__item
+                            img(src="/img/leasing_logo_2.png", alt="")
+                          li.list-logo__item
+                            img(src="/img/leasing_logo_3.png", alt="")
+                          li.list-logo__item
+                            img(src="/img/leasing_logo_4.png", alt="")
+                          li.list-logo__item
+                            img(src="/img/leasing_logo_5.png", alt="")
+                          li.list-logo__item
+                            img(src="/img/leasing_logo_6.png", alt="")
+                      li.pay__item
+                        label При получении
+                          input(type="checkbox")
+                          .checkbox.checkbox_circle
+                      li.pay__item
+                        label Оплата по счету
+                          input(type="checkbox")
+                          .checkbox.checkbox_circle
+                      li.pay__item
+                        label Онлайн банковской картой
+                          input(type="checkbox")
+                          .checkbox.checkbox_circle
+                        ul.list-logo
+                          li.list-logo__item
+                            img(src="/img/pay_card_1.png", alt="")
+                          li.list-logo__item
+                            img(src="/img/pay_card_2.png", alt="")
+                          li.list-logo__item
+                            img(src="/img/pay_card_3.png", alt="")
+                          li.list-logo__item
+                            img(src="/img/pay_card_4.png", alt="")
+                          li.list-logo__item
+                            img(src="/img/pay_card_5.png", alt="")
+                      li.pay__item.not-active
+                        label Яндекс деньги
+                          input(type="checkbox")
+                          .checkbox.checkbox_circle
+                        ul.list-logo
+                          li.list-logo__item.list-logo__item_full
+                            img(src="/img/pay_yandex.png", alt="")
+                      li.pay__item.pay__item_full
+                        label Qiwi Wallet
+                          input(type="checkbox")
+                          .checkbox.checkbox_circle
+                        ul.list-logo
+                          li.list-logo__item.list-logo__item_full
+                            img(src="/img/pay_qiwi.png", alt="")
+                      li.pay__item.pay__item_full
+                        label WebMoney
+                          input(type="checkbox")
+                          .checkbox.checkbox_circle
+                        ul.list-logo
+                          li.list-logo__item.list-logo__item_full
+                            img(src="/img/pay_webmoney.png", alt="")           
+              .pay__description
+                ul.pay-descriptions
+                  li.pay-descriptions__item
+                    .pay-descriptions__pic
+                      img(src="/img/desc_icon_1.png", alt="")
+                    .pay-descriptions__title Безопасная оплата
+                    .pay-descriptions__text
+                      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet impedit sed mollitia similique sapiente repellat dolorum? Ducimus atque eos vero. Autem, quaerat amet accusantium blanditiis vitae nisi fugit aut praesentium.
+                  li.pay-descriptions__item
+                    .pay-descriptions__pic
+                      img(src="/img/desc_icon_2.png", alt="")
+                    .pay-descriptions__title Безопасная оплата
+                    .pay-descriptions__text
+                      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet impedit sed mollitia similique sapiente repellat dolorum? Ducimus atque eos vero. Autem, quaerat amet accusantium blanditiis vitae nisi fugit aut praesentium.
+                  li.pay-descriptions__item
+                    .pay-descriptions__pic
+                      img(src="/img/desc_icon_3.png", alt="")
+                    .pay-descriptions__title Безопасная оплата
+                    .pay-descriptions__text
+                      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet impedit sed mollitia similique sapiente repellat dolorum? Ducimus atque eos vero. Autem, quaerat amet accusantium blanditiis vitae nisi fugit aut praesentium.
+    block footer
+      include ../../blocks/modules/footer/footer  
+  .popup.popup_okey
+    .popup__content
+      .popup__body
+        .popup__pic
+          img(src="/img/popup_yes.png", alt="alt")
+        .popup__title Спасибо
+        .popup__desc Ваш заказ успешно оплачен
+  .popup.popup_error
+    .popup__content
+      .popup__body
+        .popup__pic
+          .popup__error-text error
+          img(src="/img/popup_no.png", alt="alt")
+        .popup__title.popup__title_uppercase Ошибка
+        .popup__desc Пожалуйста введите корректное значение
+block scripts
+  script(src="js/main.js")
+  script(src="js/vendor.js")
