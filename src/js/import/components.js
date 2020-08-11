@@ -31,7 +31,6 @@ $(document).ready(() => {
       body.style.width = 'auto';
     }
 
-    
     const buttonShowFilter = $('.breadcrumb-mobile__all');
     const filterMobile = $('.filter-mobile');
     const filterMobileClose = $('.filter-mobile__close');
@@ -45,5 +44,15 @@ $(document).ready(() => {
       filterMobile.removeClass('active');
       popupClose();
     })
+
+    const ratingItemsList = document.querySelectorAll('.rating__item');
+    const ratingItemsArray = Array.prototype.slice.call(ratingItemsList);
+
+    ratingItemsArray.forEach(item =>
+      item.addEventListener('click', () => {
+        const { itemValue } = item.dataset; // Передаем на сервер для закрепа рейтинга
+        item.parentNode.dataset.totalValue = itemValue;
+      })  
+    );
     
 });

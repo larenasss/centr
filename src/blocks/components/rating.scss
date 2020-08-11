@@ -19,6 +19,12 @@
   background-repeat: no-repeat;
 }
 
+.rating__item:active,
+.rating__item:active ~ .rating__item {
+  background: url("../img/zv-hover.png");
+  background-repeat: no-repeat;
+}
+
 .rating[data-total-value="1"] .rating__item:nth-child(n + 5),
 .rating[data-total-value="2"] .rating__item:nth-child(n + 4),
 .rating[data-total-value="3"] .rating__item:nth-child(n + 3),
