@@ -45,4 +45,5 @@ $(document).ready(() => {
       filterMobile.removeClass('active');
       popupClose();
     })
-})
+    
+});

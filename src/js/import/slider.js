@@ -15,49 +15,43 @@ $(document).ready(() => {
     prevArrow: ".slider-product__btn-prev-one",
     nextArrow: ".slider-product__btn-next-one",
     slidesToShow: 7,
-    slidesToScroll: 3,
-    infinite: true,
+    slidesToScroll: 1,
+    respondTo: 'slider',
     responsive: [
       {
-        breakpoint: 2200,
+        breakpoint: 2201,
         settings: {
           slidesToShow: 6,
-          slidesToScroll: 3,
         }
       },
       {
-        breakpoint: 1920,
+        breakpoint: 1921,
         settings: {
           slidesToShow: 5,
-          slidesToScroll: 3
         }
       },
       {
-        breakpoint: 1600,
+        breakpoint: 1601,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 2
         }
       },
       {
         breakpoint: 1366,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 992,
+        breakpoint: 993,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1
         }
       }
     ]
@@ -67,49 +61,43 @@ $(document).ready(() => {
     prevArrow: ".slider-product__btn-prev-two",
     nextArrow: ".slider-product__btn-next-two",
     slidesToShow: 7,
-    slidesToScroll: 3,
-    infinite: true,
+    slidesToScroll: 1,
+    respondTo: 'slider',
     responsive: [
       {
-        breakpoint: 2200,
+        breakpoint: 2201,
         settings: {
           slidesToShow: 6,
-          slidesToScroll: 3,
         }
       },
       {
-        breakpoint: 1920,
+        breakpoint: 1921,
         settings: {
           slidesToShow: 5,
-          slidesToScroll: 3
         }
       },
       {
-        breakpoint: 1600,
+        breakpoint: 1601,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 2
         }
       },
       {
         breakpoint: 1366,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 992,
+        breakpoint: 993,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1
         }
       }
     ]
@@ -119,49 +107,43 @@ $(document).ready(() => {
     prevArrow: ".slider-product__btn-prev-three",
     nextArrow: ".slider-product__btn-next-three",
     slidesToShow: 7,
-    slidesToScroll: 3,
-    infinite: true,
+    slidesToScroll: 1,
+    respondTo: 'slider',
     responsive: [
       {
-        breakpoint: 2200,
+        breakpoint: 2201,
         settings: {
           slidesToShow: 6,
-          slidesToScroll: 3,
         }
       },
       {
-        breakpoint: 1920,
+        breakpoint: 1921,
         settings: {
           slidesToShow: 5,
-          slidesToScroll: 3
         }
       },
       {
-        breakpoint: 1600,
+        breakpoint: 1601,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 2
         }
       },
       {
         breakpoint: 1366,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 992,
+        breakpoint: 993,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1
         }
       }
     ]
@@ -173,6 +155,7 @@ $(document).ready(() => {
     asNavFor: '.card__tumb',
     prevArrow: ".card-slider__btn-prev",
     nextArrow: ".card-slider__btn-next",
+    respondTo: 'slider',
     responsive: [
       {
         breakpoint: 480,
@@ -191,6 +174,7 @@ $(document).ready(() => {
     dots: true,
     centerMode: true,
     focusOnSelect: true,
+    respondTo: 'slider',
     responsive: [
       {
         breakpoint: 480,
@@ -232,6 +216,7 @@ $(document).ready(() => {
         asNavFor: '.card__tumb-popup',
         prevArrow: ".card-slider__btn-prev-popup",
         nextArrow: ".card-slider__btn-next-popup",
+        respondTo: 'slider',
         responsive: [
           {
             breakpoint: 480,
@@ -247,6 +232,7 @@ $(document).ready(() => {
         slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '.card__slider-popup',
+        respondTo: 'slider',
         dots: true,
         centerMode: true,
         focusOnSelect: true,
