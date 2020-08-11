@@ -145,10 +145,12 @@
     padding: 30px;
     border-radius: 6px;
     box-shadow: 0 0 2px 0 rgba(44, 44, 44, 0.59);
+    background-color: $colorWhite;
 
     @include phone-max {
-      padding: 0 15px;
+      padding: 0;
       box-shadow: none;
+      background-color: inherit;
     }
   }
 
@@ -284,13 +286,19 @@
 .credit {
   margin-bottom: 30px;
 
+  @include phone-max {
+    margin: 0 -3% 30px -3%;
+  }
+
   &__content {
     padding: 30px;
     border-radius: 6px;
     box-shadow: 0 0 2px 0 rgba(44, 44, 44, 0.59);
+    background: $colorWhite;
 
     @include phone-max {
-      padding: 15px;
+      padding: 15px 3%;
+      box-shadow: none;
     }
 
     & p {
@@ -301,13 +309,20 @@
 }
 
 .leasing {
+
+  @include phone-max {
+    margin: 0 -3% 30px -3%;
+  }
+
   &__content {
     padding: 30px;
     border-radius: 6px;
     box-shadow: 0 0 2px 0 rgba(44, 44, 44, 0.59);
+    background-color: $colorWhite;
 
     @include phone-max {
-      padding: 15px;
+      padding: 15px 3%;
+      box-shadow: none;
     }
 
     & p {

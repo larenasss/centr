@@ -424,6 +424,10 @@
       margin-right: 0;
       margin-bottom: 20px;
     }
+
+    @include phone-middle {
+      flex-direction: column;
+    }
   }
   
   &__label {
@@ -434,8 +438,17 @@
     background-color: $colorRed;
     color: $colorWhite;
 
+    @include phone-middle {
+      width: 100%;
+    }
+
     &:not(:last-child) {
       margin-right: 40px;
+
+      @include phone-middle {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
     }
     
     &.active {
