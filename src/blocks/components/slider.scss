@@ -102,6 +102,14 @@
     @include phone-max {
       margin-bottom: 180px;
     }
+
+    @include phone-middle {
+      margin-bottom: 100px;
+    }
+
+    @include phone-small {
+      margin-bottom: 40px;
+    }
   }
 }
 

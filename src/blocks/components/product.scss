@@ -11,6 +11,10 @@
     padding-top: 20px;
   }
 
+  @include phone-middle {
+    margin: 0;
+  }
+
   &__item {
     padding: 12px;
 
@@ -20,6 +24,7 @@
 
     @include phone-max {
       width: 100%;
+      padding: 12px 0;
     }
   }
 

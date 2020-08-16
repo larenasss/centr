@@ -136,6 +136,10 @@
     align-items: center;
     border-right: 1px solid #ff989d;
 
+    @include phone-middle {
+      padding-right: 10px;
+    }
+
     &::before {
       content: "";
       background: url("../img/filter-mobile-popular.png");
@@ -143,6 +147,10 @@
       height: 20px;
       display: inline-block;
       margin-right: 20px;
+
+      @include phone-small {
+        margin-right: 10px;
+      }
     }
   }
 
@@ -150,6 +158,10 @@
     display: flex;
     align-items: center;
     padding-left: 20px;
+    
+    @include phone-small {
+      padding-left: 10px;
+    }
 
     &::before {
       content: "";
@@ -158,6 +170,10 @@
       height: 20px;
       display: inline-block;
       margin-right: 20px;
+
+      @include phone-small {
+        margin-right: 10px;
+      }
     }
   }
 

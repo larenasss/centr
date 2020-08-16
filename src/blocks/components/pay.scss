@@ -43,16 +43,10 @@
       width: auto;
       margin-right: 20px;
     }
-
-    &_mobile {
-      @include phone-max {
-        width: 45%;
-      }
-    }
   }
 
   &__box-button{
-    width: 30px;
+    min-width: 30px;
     height: 30px;
     border-radius: 3px;
     border: solid 1px #e8e8e8;
@@ -226,6 +220,7 @@
 
     @include phone-max {
       justify-content: space-between;
+      flex-direction: column;
     }
   }
 
@@ -306,6 +301,10 @@
   display: inline-flex;
   align-items: center;
 
+  @include phone-max {
+    padding: 8px;
+  }
+
   &::before {
     content: "";
     width: 17px;
@@ -313,6 +312,10 @@
     display: inline-block;
     background: url("../img/login.png") center center;
     margin-right: 15px;
+
+    @include phone-max {
+      margin-right: 5px;
+    }
   }
 
   &::after {
@@ -322,6 +325,10 @@
     display: inline-block;
     background: url("../img/arrow.png") center center;
     margin-left: 40px;
+
+    @include phone-max {
+      margin-left: 10px;
+    }
   }
 }
 
@@ -333,6 +340,7 @@
   &__item {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 5px 10px;
 
     & img {
@@ -350,6 +358,7 @@
     &_full {
       @include phone-max {
         width: 100%;
+        justify-content: flex-start;
       }
     }
 
@@ -437,6 +446,10 @@
     cursor: pointer;
     background-color: $colorRed;
     color: $colorWhite;
+
+    @include phone-max {
+      padding: 8px 15px;
+    }
 
     @include phone-middle {
       width: 100%;

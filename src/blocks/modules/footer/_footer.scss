@@ -15,6 +15,7 @@
           display: flex;
           flex-direction: column-reverse;
           padding: 40px;
+          border-radius: 0;
       }
   }
 
@@ -108,7 +109,12 @@
       align-items: center;
 
       @include net-book {
-          margin-right: 20px;
+        margin-right: 20px;
+      }
+
+      @include phone-small {
+          margin-right: 0;
+          margin-bottom: 20px;
       }
 
       & a {

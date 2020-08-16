@@ -212,6 +212,10 @@
       justify-content: space-between;
       margin-bottom: 24px;
     }
+
+    @include phone-middle {
+      flex-direction: column;
+    }
   }
 
   &__price-item {
@@ -223,6 +227,10 @@
       margin-bottom: 0;
       font-size: 28px;
     }
+
+    @include phone-middle {
+      margin-bottom: 20px;
+    }
   }
 
   &__price-desc {
@@ -230,6 +238,10 @@
     padding-bottom: 2px;
     border-bottom: 1px dashed $colorGreen;
     display: inline-block;
+
+    @include phone-small {
+      display: inline;
+    }
   }
 
   &__rating {
@@ -336,6 +348,20 @@
       visibility: hidden;
       z-index: 1000;
       color: #6c6c6c;
+
+      @include phone-max {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      @include phone-middle {
+        left: 20%;
+        transform: translateX(-50%);
+      }
+
+      @include phone-small {
+        left: -35%;
+      }
     }
 
     &:hover {
@@ -413,6 +439,10 @@
 
     & p {
       width: 80%;
+
+      @include phone-middle {
+        width: 100%;
+      }
     }
 
     @include desktop {
@@ -423,6 +453,10 @@
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
+    }
+
+    @include phone-middle {
+      flex-direction: column;
     }
   }
 
@@ -452,6 +486,10 @@
     text-align: center;
     color: #868686;
 
+    @include phone-middle {
+      padding: 16px 4px;
+    }
+
     &:not(:last-child) {
       margin-bottom: 18px;
     }
@@ -476,6 +514,11 @@
 
     @include phone-max {
       margin-bottom: 0;
+    }
+
+    @include phone-middle {
+      width: 100%;
+      margin-bottom: 20px;
     }
   }
 
@@ -612,6 +655,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
+
+    @include phone-middle {
+      flex-direction: column;
+    }
   }
 
   &__buy {
@@ -620,6 +667,11 @@
     border-radius: 3px;
     padding: 6px 30px;
     width: 40%;
+
+    @include phone-middle {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   &__basket {
@@ -628,6 +680,11 @@
     background-color: $colorRed;
     color: $colorWhite;
     width: 40%;
+    
+    @include phone-middle {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   &__like {
@@ -638,6 +695,10 @@
     border: solid 1px #d9d9d9;
     background: url("../img/heart.png") center no-repeat;
     background-color: #f9dcdc;
+
+    @include phone-middle {
+      width: 100%;
+    }
   }
 }
 

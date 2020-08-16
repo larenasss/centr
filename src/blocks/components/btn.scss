@@ -5,6 +5,8 @@
   width: 100%;
   color: $colorWhite;
   font-family: 'MontHD';
+  -webkit-appearance: none;
+  -webkit-border-radius: 6px;
 
   &_max {
     display: inline-block;
@@ -15,6 +17,10 @@
 
     @include desktop {
       padding: 20px 70px;
+    }
+
+    @include phone-middle {
+      padding: 20px 40px;
     }
   }
 }

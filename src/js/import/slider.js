@@ -148,6 +148,7 @@ $(document).ready(() => {
       }
     ]
   });
+  
   $('.card__tumb').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
