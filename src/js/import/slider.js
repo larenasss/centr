@@ -184,56 +184,51 @@ $(document).ready(() => {
   const closePopupSlider = $('.popup-slider__close');
   const sliderPopup = document.querySelector('.popup-slider');
 
-  let showPopupSlider = function(item) {
-    item.on('click', function(){
-      sliderPopup.style.display = 'flex';
-      if (window.matchMedia("(min-width: 768px)").matches) {
-        popupShow();
-      }
+  clickItemBigSlider.on('click', function(){
+    sliderPopup.style.display = 'flex';
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      popupShow();
+    }
 
-      $('.card__slider-popup').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: '.card__tumb-popup',
-        prevArrow: ".card-slider__btn-prev-popup",
-        nextArrow: ".card-slider__btn-next-popup",
-        responsive: [
-          {
-            breakpoint: 480,
-            settings: {
-              asNavFor: null,
-              dots: true,
-              dotsClass: "slider__dots"
-            }
+    $('.card__slider-popup').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      asNavFor: '.card__tumb-popup',
+      prevArrow: ".card-slider__btn-prev-popup",
+      nextArrow: ".card-slider__btn-next-popup",
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            asNavFor: null,
+            dots: true,
+            dotsClass: "slider__dots"
           }
-        ]
-      });
-      $('.card__tumb-popup').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        asNavFor: '.card__slider-popup',
-        dots: true,
-        centerMode: true,
-        focusOnSelect: true,
-        responsive: [
-          {
-            breakpoint: 480,
-            settings: {
-              asNavFor: null
-            }
+        }
+      ]
+    });
+    $('.card__tumb-popup').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.card__slider-popup',
+      dots: true,
+      centerMode: true,
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            asNavFor: null
           }
-        ]
-      });
-    })
-  }
+        }
+      ]
+    });
+  })
 
   closePopupSlider.on('click', function() {
     popupClose();
     sliderPopup.style.display = 'none';
-  })
-
-  showPopupSlider(clickItemBigSlider);
-  showPopupSlider(clickItemMinSlider);
+  });
 
   if (window.matchMedia("(max-width: 768px)").matches) {
     $('.slider-product_one').slick('unslick');
